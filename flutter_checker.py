@@ -122,7 +122,6 @@ def run() -> None:
         print("Running flutter doctor...")
         __run("flutter doctor")
         __run("flutter clean")
-        __run("flutter pub get")
         __run("flutter pub upgrade")
         if system is System.MAC:
             __run("pod update", cwd="./ios")
